@@ -38,7 +38,7 @@ nav a:hover {
 }
 .slider-container {
     position: relative;
-    max-width: 560px; /* Уменьшено на 30% */
+    max-width: 560px; 
     margin: 20px auto;
     overflow: hidden;
     border-radius: 10px;
@@ -104,12 +104,12 @@ footer .social-icons {
     margin-top: 10px;
 }
 footer .social-icons img {
-    width: 24px; /* Уменьшен размер */
+    width: 24px; 
     height: 24px;
     transition: transform 0.3s;
 }
 footer .social-icons img:hover {
-    transform: scale(1.2); /* Эффект увеличения при наведении */
+    transform: scale(1.2); 
 }
 .albums-container {
     position: relative;
@@ -126,13 +126,13 @@ footer .social-icons img:hover {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    height: 300px; /* Контейнер фиксированной высоты */
+    height: 300px; 
 }
 .albums-slider img {
-    width: auto; /* Устанавливается пропорциональное масштабирование */
-    height: 100%; /* Заполняет высоту контейнера */
+    width: auto; 
+    height: 100%; 
     display: none;
-    object-fit: contain; /* Гарантирует, что изображение не будет обрезано */
+    object-fit: contain; 
     border-radius: 10px;
 }
 .albums-slider img.active {
