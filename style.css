@@ -36,6 +36,98 @@ nav a {
 nav a:hover {
     color: #1db954;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: white;
+}
+
+
+header .logo img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+header .logo img:hover {
+    transform: rotate(360deg);
+}
+
+
+nav {
+    background-color: #1e1e1e;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+
+nav a:hover {
+    background-color: #a653ec;
+    color: black;
+    transform: translateY(-5px);  
+}
+
+
+nav ul li {
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+nav ul li:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+nav ul li:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+nav ul li:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+nav ul li:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+nav ul li:nth-child(5) {
+    animation-delay: 1s;
+}
+
+/* Анимация появления ссылок */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .slider-container {
     position: relative;
     max-width: 560px; 
