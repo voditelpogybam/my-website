@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A$AP Rocky</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="A$AP Rocky Logo">
+        </div>
+        <h1>A$AP Rocky</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">О сайте</a></li>
+                <li><a href="#albums">Альбомы</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#videos">Видео</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>О A$AP Rocky</h2>
+            <p>
+                Раким Атэластон Майерс, более известный как A$AP Rocky, американский рэпер, певец и продюсер.
+                Родился в Гарлеме, Нью-Йорк, в 1988 году, он стал известен благодаря коллективу A$AP Mob и своему дебютному микстейпу
+                *Live.Love.A$AP* в 2011 году. Известен своим экспериментальным стилем, Rocky сотрудничал с такими мировыми артистами,
+                как Рианна, Дрейк и Кендрик Ламар. Его влияние выходит за пределы музыки, в том числе и в моду, где он является признанным иконой.
+            </p>
+        </section>
+
+        <section id="albums">
+            <h2>Альбомы</h2>
+            <div class="albums-container">
+                <div class="albums-slider">
+                    <img src="album1.jpg" alt="Long.Live.ASAP" class="active" data-video="https://player.vimeo.com/video/1035384233?h=beb636124f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479">
+                    <img src="album2.jpg" alt="At.Long.Last.ASAP" data-video="https://player.vimeo.com/video/1035382952?h=a8c57f23f2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479">
+                    <img src="album3.jpg" alt="Testing" data-video="https://www.youtube.com/embed/5v6JUzxWoGw?si=htT4l3p6xTfZQIZS">
+                </div>
+                <div class="album-info">
+                    <h3 id="album-title">Long.Live.ASAP (2013)</h3>
+                    <p id="album-desc">Дебютный студийный альбом A$AP Rocky, который включает хиты, такие как "Goldie" и "F***in' Problems", с участием звездных артистов.</p>
+                </div>
+                <button class="prev-album">&lt;</button>
+                <button class="next-album">&gt;</button>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>Галерея</h2>
+            <div class="slider-container">
+                <div class="slider">
+                    <img src="photo1.jpg" alt="A$AP Rocky Image 1" class="active">
+                    <img src="photo2.jpg" alt="A$AP Rocky Image 2">
+                    <img src="photo3.jpg" alt="A$AP Rocky Image 3">
+                </div>
+                <button class="prev">&lt;</button>
+                <button class="next">&gt;</button>
+            </div>
+        </section>
+
+        <section id="videos">
+            <h2>Видео</h2>
+            <div id="video-container">
+                <iframe id="video-player" src="https://player.vimeo.com/video/1035384233?h=beb636124f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="A$AP Rocky - L$D (Explicit - Official Video)"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#"><img src="facebook-icon.jpg" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.jpg" alt="Twitter"></a>
+            <a href="#"><img src="instagram-icon.jpg" alt="Instagram"></a>
+        </div>
+    </footer>
+
+    <button id="scrollToTopButton">Вверх</button>
+</body>
+</html>
