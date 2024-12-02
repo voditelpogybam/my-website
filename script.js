@@ -20,13 +20,11 @@ document.addEventListener("DOMContentLoaded", function() {
         showImage(currentIndex);
     });
 
-    // Auto-play slider every 5 seconds
     setInterval(() => {
         currentIndex = (currentIndex + 1) % images.length;
         showImage(currentIndex);
     }, 5000);
 
-    // Smooth scroll to top button
     const scrollToTopButton = document.getElementById('scrollToTopButton');
     window.addEventListener('scroll', function() {
         scrollToTopButton.style.display = window.scrollY > 100 ? 'block' : 'none';
@@ -35,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
-    // Show the first image initially
+
     showImage(currentIndex);
 });
 document.addEventListener("DOMContentLoaded", function () {
@@ -80,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
         updateAlbum(currentAlbum);
     });
 
-    updateAlbum(currentAlbum); // Initialize with the first album
+    updateAlbum(currentAlbum); 
 });
 document.addEventListener("DOMContentLoaded", function () {
     const albums = document.querySelectorAll(".albums-slider img");
@@ -108,7 +106,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     ];
 
-    // Обновление альбома и видео
     function updateAlbum(index) {
         albums.forEach((img, i) => {
             img.classList.toggle("active", i === index);
@@ -117,18 +114,18 @@ document.addEventListener("DOMContentLoaded", function () {
         albumDesc.textContent = albumData[index].desc;
         videoPlayer.src = albumData[index].video;
 
-        // Плавная прокрутка к видео
+        
         document.getElementById("videos").scrollIntoView({ behavior: "smooth" });
     }
 
-    // Клики по обложкам альбомов
+
     albums.forEach((album, index) => {
         album.addEventListener("click", () => {
             updateAlbum(index);
         });
     });
 
-    // Инициализация с первого альбома
+   
     updateAlbum(0);
 });
 
